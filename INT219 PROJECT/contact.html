@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to import location icon used in address button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="index.js"></script>
+
+
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches... amazon.in</title>
+
+    <style>
+        /* Main body Container */
+        /* .container{
+            
+        } */
+
+        /* haed - 1 */
+        h1{
+            text-align: center;
+            font-family: "Amazon Ember",Arial,sans-serif;
+        }
+
+        /* container1 */
+        .container1{
+            background-color: #f3f3f3 !important;
+            height: 286px;
+        }
+
+        /* internal box content - 1 (Chat with us) */
+        .internal1{
+            border: 1px #D5D9D9 solid;
+            background-color: white;
+            box-sizing: border-box;
+            /* text-align: center !important; */
+            text-size-adjust: 10px;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            border-radius: 8px;
+            width: 400px !important;
+            margin-left: 325px;
+            margin-top: 7px;
+            padding: 20px;
+            padding-top: 4px;
+        }
+
+        /* internal box content - 2 (Call me) */
+        .internal2{
+            border: 1px #D5D9D9 solid;
+            background-color: white;
+            box-sizing: border-box;
+            /* text-align: center !important; */
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            border-radius: 8px;
+            width: 400px !important;
+            margin-left: 775px;
+            margin-top: -210px;
+            padding: 20px;
+            padding-top: 4px;
+        }  
+
+        /* Chat with us & Call me buttons */
+        #cont{
+            padding: 2px;
+            padding-inline: 40px;
+            
+        }
+        
+        /* head - 2 */
+        h2{
+            text-align: center;
+            font-family: "Amazon Ember",Arial,sans-serif;
+        }
+
+        /* container2 */
+
+        /* internal box content - 3 (contact images) */
+        #contimg1{
+            position: relative;
+            left: 285px;
+        }
+        #contimg2{
+            position: relative;
+            left: 435px;
+        }
+        #contimg3{
+            position: relative;
+            left: 625px;
+        }
+        #contimg4{
+            position: relative;
+            left: 815px;
+        }   
+        
+        /* internal box content - 3 (contact images links) */
+        #contlink1{
+            position: relative;
+            left: 280px;
+            text-decoration: none;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            color: #007185;
+        }
+        #contlink2{
+            position: relative;
+            left: 390px;
+            text-decoration: none;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            color: #007185;
+        }
+        #contlink3{
+            position: relative;
+            left: 535px;
+            text-decoration: none;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            color: #007185;
+        }
+        #contlink4{
+            position: relative;
+            left: 695px;
+            text-decoration: none;
+            font-family: "Amazon Ember",Arial,sans-serif;
+            font-size: 14px;
+            color: #007185;
+        }
+
+        #contlink1:hover,#contlink2:hover,#contlink3:hover,#contlink4:hover{
+            color: rgba(255, 68, 0, 0.76);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar - 1 code starts here -->
+        <nav>
+            <!-- Amazon logo -->
+            <div class="logo">
+               <a href="index.html" ><img src="images/amazon.png" alt="" width="130px"></a>
+            </div>
+
+            <!-- Adress button -->
+            <div class="location">
+                <button class="btn1" onclick="window.location.href='index.html'"><i class="fa fa-map-marker" style="font-size:25px;color: white"></i>Address</button>
+               
+            </div>
+
+            <!-- Search bar -->
+            <div class="search">
+                <input type="text" placeholder="search here">
+                <button class="fsearch"  onclick="refreshPage()">&#128269</button>
+            </div>
+
+            <!-- signin button -->
+            <div class="login">
+                <button class="btn2" onclick="window.location.href='login.html'">Sign in<br>Accounts</button>
+               
+            </div>
+
+            <!-- India flag and Languages drop box -->
+            <div class="flag">
+                <img src="images/Flag-India.jpg" alt="" width="30px">
+            </div>
+            <div class="drop">
+
+                <select name="cars" id="cars">
+
+                    <option value="AF">EN</option>
+                    <option value="AL">HI</option>
+                    <option value="DZ">TA</option>
+                    <option value="DZ">TE</option>
+                    <option value="DZ">KN</option>
+                    <option value="DZ">ML</option>
+                    <option value="DZ">MR</option>
+                    <option value="DZ">BN</option>
+
+
+                </select>
+            </div>
+            
+            <!-- Returns & Orders button -->
+            <button class="order" onclick="window.location.href='orders.html'">Returns<br>&Orders</button>
+            
+            <!-- Cart button with cart image -->
+            <button class="cart" onclick="window.location.href='cart.html'"><img id="cart" src="images/cartt.png" alt="Cart icon">Cart</button>
+
+        </nav>
+        <!-- nav bar - 1 ends here -->
+
+
+        <!-- second nav Bar code starts here-->
+        <nav>
+        <div class="nav2" style="background-color: #232f3e">
+
+
+              
+            <!-- All buttons in second nav -->
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ All</button>
+                <button class="openbtn" onclick="refreshPage()">Fresh</button>
+                <button class="openbtn" onclick="refreshPage()">Amazon Pay</button>
+                <button class="openbtn" onclick="refreshPage()">Gift Cards</button>
+                <button class="openbtn" onclick="refreshPage()">Best Sellers</button>
+                <button class="openbtn" onclick="refreshPage()">Browsing History</button>
+                <button class="openbtn" onclick="refreshPage()">Kindle eBooks</button>
+                <button class="openbtn" onclick="refreshPage()">Buy Again</button>
+                <button class="openbtn" onclick="refreshPage()">Baby</button>
+                <button class="openbtn" onclick="refreshPage()">Pet Supplies</button>
+                <button class="openbtn" onclick="refreshPage()" >Gift ideas</button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/prime.jpg" alt="" width="55px"></button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/amlogo.jpg" alt="" width="20px">    Shopping made easy | Download the app</button> 
+            </div>
+
+            <!-- Left slider menu button ☰ALL -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <h4 style="color: black;padding-left: 42px;">Trending</h4>
+                <a href="#">Best Sellers</a>
+                <a href="#">New releases</a>
+                <a href="#">Movers and Shakers</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Shop by Department</h4>
+                <a href="#">Mobiles, Computers</a>
+                <a href="#">Tv, Appliances, Electronics</a>
+                <a href="#">Women's Fashion</a>
+                <a href="#">Men's Fashion</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Programs & Features</h4>
+                <a href="#">Gift card & Mobile Recharges</a>
+                <a href="#">Flight Tickets</a>
+                <a href="#">#FoundItOnAmazon</a>
+                <a href="#">Amazon Outlet</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Help & Settings</h4>
+                <a href="contact.html">Contact</a>
+                <a href="#">About</a>
+                <a href="login.html">Sign-out</a>
+            </div>
+                 
+        </div>
+        </nav>
+
+        
+    </header>
+    <!-- headers ends here -->
+
+<!-- Main body Container -->
+<div class="container"><br><br>
+
+        <!-- head - 1 -->
+        <h1>Want to chat now or get a call from us?</h1><br><br>
+
+    <!-- container1 -->
+    <div class="container1"><br><br>
+
+            <!-- internal box content - 1 -->
+            <div class="internal1"><br>
+                <h3>Chat right now</h3><br>
+                <p>
+                    Our messaging assistant can quickly solve many issues or direct you to the right person or place.
+                </p><br>
+                    <b>Instant chat and always available.</b><br><br>
+                    <button id="cont">Start chatting</button>
+            </div>
+
+            <!-- internal box content - 2 -->
+            <div class="internal2"><br>
+                <h3>Have us call you</h3><br>
+                <p>
+                    We'll first get a few details about your issue and then someone will call you right away.
+                </p><br>
+                    <b>Instant call and always available.</b><br><br>
+                    <button id="cont">Call me</button>              
+            </div><br><br>
+    </div><br><br>
+
+        
+        <!-- head - 2 -->
+        <h2>Here are a few things you can take care of on your own </h1><br><br>
+
+    <!-- container2 -->
+    <div class="container2">
+
+        <!-- internal box content - 3 (contact images) -->
+        <div class="internal3">
+            <img id="contimg1" src="images/contact1.png" alt="Oders" width="100" height="100">
+            <img id="contimg2" src="images/contact2.png" alt="Oders" width="100" height="100">
+            <img id="contimg3" src="images/contact3.png" alt="Oders" width="100" height="100">
+            <img id="contimg4" src="images/contact4.png" alt="Oders" width="100" height="100">
+        </div>  
+
+        <!-- internal box content - 3 (contact image links) -->
+        <div class="internal4">
+            <a href="#" id="contlink1">Check on an order</a>
+            <a href="#" id="contlink2">Manage content & devices</a>         
+            <a href="#" id="contlink3">Get help with Prime</a>           
+            <a href="#" id="contlink4">Update payment info</a>            
+        </div>  
+    </div>
+
+</div><br><br>
+
+        <!-- Footer- 2 -->
+        <footer class="flex-all-center">
+            <p>
+                <a href="#">Conditions of Use & Sale</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Interest-Based Ads</a> 
+                <a href="#">&copy 1996-2021 Amazon, Inc.</a>
+            </p>
+        </footer>
+
+</body>
+
+</html>

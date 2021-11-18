@@ -1,0 +1,211 @@
+/* Slide show  */
+.content{
+  height: 400px;
+  width: 1467px;
+  position: relative; 
+  left: 27px;  
+  /* margin-left: 27px; 
+  margin-top: 115px; */
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -32px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+/* slide show prev & next button Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* After slide show */
+/* Adding Cards and see more (4) CSS */
+.categories1{
+  left: 44px; 
+  padding: 10px;
+
+} 
+
+/* id's of cards (images) */
+#i1,#i2,#i3,#i4{
+  padding-left: 50px;
+}
+#i1:hover,#i2:hover,#i3:hover,#i4:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
+
+/* id's of cards (see more links) */
+#i5:hover,#i6:hover,#i7:hover,#i8:hover{
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.514);
+  text-decoration: underline;
+}
+
+#i5{
+  /* position: fixed; */
+  /* left: 80px; */
+  margin-left: 80px;
+  color: #007185;
+  text-decoration: none;
+}
+#i6{
+  /* position: relative;
+  left: 220px; */
+  margin-left: 220px;
+  color: #007185;
+  text-decoration: none;
+}
+#i7{
+  /* position: relative;
+  left: 510px; */
+  margin-left: 210px;
+  color: #007185;
+  text-decoration: none;
+}
+#i8{
+  /* position: relative;
+  left: 800px; */
+  margin-left: 1140px;
+  color: #007185;
+  text-decoration: none;
+}
+
+
+/* Three rows of products starts here */
+
+/* Best of electronics */
+/* BEST BRANDED SHOES HERE!!! */
+/* MENS BRANDED SHIRTS */
+.car{
+    max-width: 91vw;
+    margin: 20px 40px ;
+    
+}
+.cards{
+  display: flex;
+  overflow-x: scroll;
+  
+}
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 55px;
+  cursor: pointer;
+}
+.lines p{
+   display: flex;
+   justify-content: center;
+   
+}
+/* all images bulge effect */
+#bulge:hover{
+  transform: scale(1.1);
+}
+
+
+
+/* back to top button css */
+#myBtn{
+     width: 100%;
+     background-color: #37475A;
+     height: 40px;
+     color: white;
+     cursor: pointer;
+}
+#myBtn:hover{
+  background-color:gray;
+}
+
+
+/* Footer-1 */
+.row{
+  
+  display: flex;
+  justify-self: flex-start;
+  padding:40px 348px;
+  background-color: #232f3e;
+ 
+  
+}
+.column ul li{
+ list-style: none;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  
+}
+ul li a{
+  color:rgba(255, 255, 255, 0.733) ;
+}
+h4{
+  color: white;
+  position: relative;
+  left: -13px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Amazon Ember",Arial,sans-serif;
+}
+ a:hover{
+  text-decoration:underline ;
+}
+
+p a{
+  text-decoration: none;
+}
+
+/* unknown footer */
+.navFooterColHead{
+  color: white;
+  display: inline-block;
+}
+

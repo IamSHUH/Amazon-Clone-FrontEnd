@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="index.js"></script>
+    <title>Amazon Password Assistance</title>
+</head>
+<style>
+
+    /* universal selector */
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /* Amazon logo on haed */
+    #amazon-icon{
+        position: relative;
+        left: 696px; 
+        align-items: center;
+        width: 120px;
+        top: 45px;
+    }
+
+    /* body */
+    .container {
+        border: 1px solid rgba(0, 0, 0, 0.445);
+        border-radius: 4px;
+        width: 425px;
+        height: 265px;
+        margin: 56px auto;
+        background-color: white;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+
+
+    /* head */
+    h1 {
+        margin: 0px 0px 22px 0px;
+        position: relative;
+        left: 80px;
+        color: black;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    /* paragraphs p */
+    #p1{
+       position: relative;
+        left: 80px;
+        color: black;
+        font-size: 14px;
+    }
+
+
+
+    /* labels */
+    label {
+        position: relative;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 10px 2px;
+        left: 80px;
+    }
+
+    /* Email input */
+    form input[name=email] {
+        margin: 0px 0px 12px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 265px;
+        position: relative;
+        left: 80px;
+        border-radius: 4px;
+
+    }
+
+    
+    /* continue button */
+    form .btnn {
+        margin: 0px 0px 12px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 290px;
+        position: relative;
+        left: 80px;
+        cursor: pointer;
+        background-color: rgba(255, 166, 0, 0.600);
+        border-radius: 4px;
+
+    }
+    .btnn:hover{
+            background-color: rgba(255, 166, 0, 0.500);
+           
+    }
+
+    /* container2 out of container1 */
+    .container2 {
+        width: 425px;
+        left: -67px;
+        position: relative;
+        margin: -50px auto;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+
+
+</style>
+<body>
+
+    <!-- AMazon logo on haed -->
+    <img id="amazon-icon" src="images/amazonin.png" alt="Amazon.in">
+
+    <div class="container"> <br>
+        <h1>Password assistance</h1>
+
+        <!-- "form" which redirects to home page on clicking login button after validation -->
+        <form action="login.html">
+
+            <p id="p1">Enter the email address or mobile phone <br>number  associated with your Amazon account.</p><br>
+
+            <!-- Inputs for username & Password -->
+            <label for="username">Email or mobile phone number</label><br>
+            <input type="email/phone" name="email" id="emailphone"  placeholder="Enter Email/Phone*" minlength="10" required><br><br>
+
+            <!-- Login Button -->
+            <button class="btnn" onclick="myFunction()">Continue</button><br>
+
+            
+
+        </form>
+
+  
+
+    </div><br>
+
+    <!-- container 2 -->
+    <div class="container2">
+    <h1>Has your email or mobile number changed?</h1>
+    <p id="p1">If you no longer use the email address associated with your Amazon account, you may contact <a href="">Customer Service</a> for help restoring access to your account.</p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <title>Amazon Sign In</title>
+</head>
+<style>
+
+    /* universal selector */
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /* AMazon logo on haed */
+    #amazon-icon{
+        position: relative;
+        left: 696px; 
+        align-items: center;
+        width: 120px;
+        top: 45px;
+    }
+
+    /* body */
+    .container {
+        border: 1px solid rgba(0, 0, 0, 0.445);
+        border-radius: 4px;
+        width: 435px;
+        height: 470px;
+        margin: 70px auto;
+        background-color: white;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+
+    /* head */
+    h1 {
+        margin: 0px 0px 22px 0px;
+        position: relative;
+        left: 80px;
+        color: black;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    /* labels */
+    label {
+        position: relative;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 10px 2px;
+        left: 80px;
+    }
+
+    /* Email input */
+    form input[name=email] {
+        margin: 0px 0px 12px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 265px;
+        position: relative;
+        left: 80px;
+        border-radius: 4px;
+
+    }
+
+    /* Password input */
+    form input[name=password] {
+        margin: 0px 0px 35px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 265px;
+        position: relative;
+        left: 80px;
+        border-radius: 4px;
+    }
+  
+    
+    /* Login button */
+    form .btnn {
+        margin: 0px 0px 12px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 290px;
+        position: relative;
+        left: 80px;
+        cursor: pointer;
+        background-color: rgba(255, 166, 0, 0.600);
+        border-radius: 4px;
+
+    }
+    .btnn:hover{
+            background-color: rgba(255, 166, 0, 0.500);
+           
+    }
+
+    /* Terms & Conditions */
+    p{
+        position: relative;
+        left: 87px;
+        font-size: 13px;
+    }
+    p a {
+        text-decoration: none;
+        color: #0066c0;
+    }
+    p a:hover{
+        color: rgba(255, 68, 0, 0.897);
+        text-decoration: underline;
+    }
+
+    /* Remember me check-box */
+    form input[name=remember] {
+
+           position: relative;
+           left: 84px;
+    }
+
+    /* Forgot password link*/
+    ul a {
+        font-size: 13px;
+        text-decoration: none;
+        position: relative;
+        left: 232px;
+        bottom: 196px;
+        color: #0066c0;
+
+    }
+    #forgot:hover{
+        color: rgba(255, 68, 0, 0.897);
+        text-decoration: underline;
+    }
+
+    /* New to Amazon? */
+    #hr-line{
+        font-family: "Amazon Ember",Arial,sans-serif;
+        font-size: 11px;
+    }
+    #line1{
+        width:40%; 
+        padding-left: 80px;
+        color: #767676;
+        height: 0.4px;
+    }
+    #line2{
+        width:40%; 
+        padding-right: 70px; 
+        font-weight: 40;
+        color: #767676;
+    }
+
+    /* Creat Amazon account button */
+    .btn {
+        margin: 0px 0px 12px 0px;
+        padding: 6px;
+        padding-left: 13px;
+        width: 290px;
+        position: relative;
+        left: 80px;
+        cursor: pointer;
+        background-color:gainsboro;
+        border-radius: 4px;
+
+    }
+    .btn:hover{
+        background-color: rgba(255, 166, 0, 0.600);
+           
+    }
+
+
+</style>
+<body>
+
+    <!-- Amazon logo on haed -->
+    <img id="amazon-icon" src="images/amazonin.png" alt="Amazon.in">
+
+    <div class="container"> <br>
+        <h1>Sign In</h1>
+
+        <!-- "form" which redirects to home page on clicking login button after validation -->
+        <form action="index.html">
+
+            <!-- Inputs for username & Password -->
+            <label for="username">Email or mobile phone number</label><br>
+            <input type="email/phone" name="email" id="emailphone"  placeholder="Enter Email/Phone*" minlength="10" required><br>
+
+            <!-- INput password -->
+            <!-- Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters (pattern) -->
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" minlength="6" maxlength="16" required><br>
+
+            <!-- Login Button -->
+            <button class="btnn" onclick="validate()">Sign In</button><br>
+
+            <!--  -->
+            <p>By continuing, you agree to Amazon's <a href=""> Conditions <br> of Use </a> and <a href="">Privacy Notice.</a> </p>
+
+            <br>
+
+            <!-- Check-Box Remember Me -->
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Keep me signed in.</label><br>
+
+            <!-- Forgot password (Link To reset password) -->
+            <ul ><a href="forgot.html" id="forgot">Forgot your password?</a></ul>
+            
+
+        </form>
+
+        <!-- New to Amazon? -->
+        <table><tr>
+            <td id="line1" ><hr/></td>
+            <td id="hr-line" style="vertical-align:middle; text-align: center; ">New to Amazon?</td>
+            <td id="line2" ><hr/></td>
+            </tr></table><br>
+
+        <!-- Sign-up Button -->
+        <button class="btn" onclick="window.location.href='sign-up.html'">Create your Amazon account</button>
+
+    </div>
+
+
+</body>
+
+</html>

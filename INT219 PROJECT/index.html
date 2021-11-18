@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to import location icon used in address button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="index.js"></script>
+
+
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches... amazon.in</title>
+</head>
+
+<body>
+    <header>
+        <!-- nav bar - 1 code starts here -->
+        <nav>
+            <!-- Amazon logo -->
+            <div class="logo">
+               <a href="index.html" ><img src="images/amazon.png" alt="" width="130px"></a>
+            </div>
+
+            <!-- Adress button -->
+            <div class="location">
+                <button class="btn1" onclick="window.location.href='Address.html'"><i class="fa fa-map-marker" style="font-size:25px;color: white"></i>Address</button>
+               
+            </div>
+
+            <!-- Search bar -->
+            <div class="search">
+                <input type="text" placeholder="search here">
+                <button class="fsearch"  onclick="refreshPage()">&#128269</button>
+            </div>
+
+            <!-- signin button -->
+            <div class="login">
+                <button class="btn2" onclick="window.location.href='login.html'">Sign in<br>Accounts</button>
+               
+            </div>
+
+            <!-- India flag and Languages drop box -->
+            <div class="flag">
+                <img src="images/Flag-India.jpg" alt="" width="30px">
+            </div>
+            <div class="drop">
+
+                <select name="cars" id="cars">
+
+                    <option value="AF">EN</option>
+                    <option value="AL">HI</option>
+                    <option value="DZ">TA</option>
+                    <option value="DZ">TE</option>
+                    <option value="DZ">KN</option>
+                    <option value="DZ">ML</option>
+                    <option value="DZ">MR</option>
+                    <option value="DZ">BN</option>
+
+
+                </select>
+            </div>
+            
+            <!-- Returns & Orders button -->
+            <button class="order" onclick="window.location.href='orders.html'">Returns<br>&Orders</button>
+            
+            <!-- Cart button with cart image -->
+            <button class="cart" onclick="window.location.href='cart.html'"><img id="cart" src="images/cartt.png" alt="Cart icon">Cart</button>
+
+        </nav>
+        <!-- nav bar - 1 ends here -->
+
+
+        <!-- second nav Bar code starts here-->
+        <nav>
+        <div class="nav2" style="background-color: #232f3e">
+
+
+              
+            <!-- All buttons in second nav -->
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ All</button>
+                <button class="openbtn" onclick="refreshPage()">Fresh</button>
+                <button class="openbtn" onclick="refreshPage()">Amazon Pay</button>
+                <button class="openbtn" onclick="refreshPage()">Gift Cards</button>
+                <button class="openbtn" onclick="refreshPage()">Best Sellers</button>
+                <button class="openbtn" onclick="refreshPage()">Browsing History</button>
+                <button class="openbtn" onclick="refreshPage()">Kindle eBooks</button>
+                <button class="openbtn" onclick="refreshPage()">Buy Again</button>
+                <button class="openbtn" onclick="refreshPage()">Baby</button>
+                <button class="openbtn" onclick="refreshPage()">Pet Supplies</button>
+                <button class="openbtn" onclick="refreshPage()" >Gift ideas</button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/prime.jpg" alt="" width="55px"></button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/amlogo.jpg" alt="" width="20px">    Shopping made easy | Download the app</button> 
+            </div>
+
+            <!-- Left slider menu button ☰ALL -->
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <h4 style="color: black;padding-left: 42px;">Trending</h4>
+                <a href="#">Best Sellers</a>
+                <a href="#">New releases</a>
+                <a href="#">Movers and Shakers</a><hr>
+                <!-- <h4 style="color: black;padding-left: 42px;">Digital Content And Devices</h4>
+                <a href="#">Echo & Alexa</a>
+                <a href="#">Fire Tv</a>
+                <a href="#">Kindle E-Readers & eBooks</a><hr> 
+                <a href="#">Audible Audiobooks</a><hr>  
+                <a href="#">Amazon prime Video</a>
+                <a href="#">Amazon prime Music</a><hr> --> 
+                <h4 style="color: black;padding-left: 42px;">Shop by Department</h4>
+                <a href="#">Mobiles, Computers</a>
+                <a href="#">Tv, Appliances, Electronics</a>
+                <a href="#">Women's Fashion</a>
+                <a href="#">Men's Fashion</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Programs & Features</h4>
+                <a href="#">Gift card & Mobile Recharges</a>
+                <a href="#">Flight Tickets</a>
+                <a href="#">#FoundItOnAmazon</a>
+                <a href="#">Amazon Outlet</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Help & Settings</h4>
+                <a href="contact.html">Contact</a>
+                <a href="#">About</a>
+                <a href="login.html">Sign-out</a>
+            </div>
+                 
+        </div>
+        </nav>
+
+        
+    </header>
+    <!-- headers ends here -->
+
+   
+
+ <!-- After Two nav bars main body starts here -->
+
+  <main>
+    <br>
+    <div class="container" > 
+
+
+        <!-- Slide show -->
+        <div class="content">
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img  src="images/slide1.jpg">
+            </div>
+
+            <div class="images fade" class="openbtn" onclick="refreshPage()">    
+                <img src="images/slide2.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide3.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide4.jpg">
+            </div>
+            <div class="images fade"class="openbtn" onclick="refreshPage()">
+                <img src="images/slide5.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide6.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide7.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide8.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide9.jpg">
+            </div>
+            <div class="images fade" class="openbtn" onclick="refreshPage()">
+                <img src="images/slide10.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div> 
+        <!-- Slide show Ends here-->
+
+
+        <!-- Adding Cards and see more links  (4)-->
+         <div>
+        <div class="categories1">
+           <img id="i1" src="images/cards1.png" alt="" width="300px">
+           <img id="i2" src="images/cards2.png" alt="" width="300px">
+           <img id="i3" src="images/cards3.png" alt="" width="300px">
+           <img id="i4" src="images/cards4.png" alt="" width="300px">
+           
+        </div>
+        <div class="categories2">
+            <a id="i5" href="#">Explore more from Amazon Pay</a>
+            <a id="i6" href="#">See more</a>
+            <a id="i7" href="#">See more</a>
+            <a id="i8" href="#">See more</a>
+        </div>
+        </div>
+        <!-- Adding Cards and see more links Ends here (4)-->
+
+        <!-- Three rows of products starts here -->
+        <!-- Row - 1 -->
+         <div class="car">
+            <h2>Best of Electronics</h2>
+            <h5>Devices and Accessories</h5>
+        </div>
+        <div class="cards">
+
+            <!-- Row-1 Product-1 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic10.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>samsung</p>
+                    <p>up to 40% off</p>
+                    <button id="click" onclick="myFunction1()" style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart </button>
+
+                    <script>
+                        function myFunction1() {
+                            document.getElementById("click").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-2 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic09.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>samsung</p>
+                    <p>up to 30% off</p>
+                    <button id="clic" onclick="myFunction2()" style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction2() {
+                            document.getElementById("clic").innerHTML = "added to cart successfully";
+                            
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-3 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic11.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>oppo</p>
+                    <p>flat 3000 off</p>
+                    <button id="click1" onclick="myFunction3()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction3() {
+                            document.getElementById("click1").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-4 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic12.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>oneplus</p>
+                    <p>up to 40% off</p>
+                    <button id="click2" onclick="myFunction4()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction4() {
+                            document.getElementById("click2").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-5 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic13.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>oppo</p>
+                    <p>up to 20% off</p>
+                    <button id="click3" onclick="myFunction5()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction5() {
+                            document.getElementById("click3").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-6 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic14.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>lenevo</p>
+                    <p>up to 40% off</p>
+                    <button id="click4" onclick="myFunction6()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction6() {
+                            document.getElementById("click4").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-7 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic15.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>vivo</p>
+                    <p>up to 10% off</p>
+                    <button id="click5" onclick="myFunction7()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction7() {
+                            document.getElementById("click5").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-8 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic16.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>redmi</p>
+                    <p>up to 50% off</p>
+                    <button id="click6" onclick="myFunction8()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction8() {
+                            document.getElementById("click6").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-1 Product-9 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pic17.jpeg" alt="" width="130px">
+                <div class="lines">
+                    <p>oneplus</p>
+                    <p>up to 40% off</p>
+                    <button id="click7" onclick="myFunction9()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction9() {
+                            document.getElementById("click7").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row - 2 -->
+        <div class="car">
+            <h2>BEST BRANDED SHOES HERE!!! </h2>
+            <h5>sports and casual </h5>
+        </div>
+        <div class="cards">
+
+            <!-- Row-2 Product-1 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi1.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>adidas</p>
+                    <p>up to 40% off</p>
+                    <button id="click8" onclick="myFunction01()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction01() {
+                            document.getElementById("click8").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-2 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi2.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>nike</p>
+                    <p>up to 20% off</p>
+                    <button id="click9" onclick="myFunction02()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction02() {
+                            document.getElementById("click9").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-3 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi3.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>sparkx</p>
+                    <p>up to 40% off</p>
+                    <button id="click01" onclick="myFunction03()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction03() {
+                            document.getElementById("click01").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-4 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi4.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>layasa</p>
+                    <p>up to 70% off</p>
+                    <button id="click02" onclick="myFunction04()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction04() {
+                            document.getElementById("click02").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-5 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi5.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>nike</p>
+                    <p>up to 30% off</p>
+                    <button id="click03" onclick="myFunction05()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction05() {
+                            document.getElementById("click03").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-6 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi6.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>sparkx</p>
+                    <p>up to 40% off</p>
+                    <button id="click04" onclick="myFunction06()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction06() {
+                            document.getElementById("click04").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-7 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi7.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>adidas</p>
+                    <p>up to 10% off</p>
+                    <button id="click05" onclick="myFunction07()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction07() {
+                            document.getElementById("click05").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-8 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi8.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>bata</p>
+                    <p>up to 60% off</p>
+                    <button id="click06" onclick="myFunction08()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction08() {
+                            document.getElementById("click06").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-2 Product-9 -->
+            <div class="card-item">
+                <img id="bulge" src="images/pi9.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>adidas</p>
+                    <p>up to 20% off</p>
+                    <button id="click07" onclick="myFunction09()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction09() {
+                            document.getElementById("click07").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Row - 3 -->
+        <div class="car">
+            <h2>MENS BRANDED SHIRTS</h2>
+            <h5>Bare and Flying machine</h5>
+        </div>
+        <div class="cards">
+
+            <!-- Row-3 Product-1 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p1.jpeg" alt="" width="180px">
+                <div class="lines">
+                    <p>bare</p>
+                    <p>up to 40% off</p>
+                    <button id="click08" onclick="myFunction001()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction001() {
+                            document.getElementById("click08").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-2 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p2.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>flying machine</p>
+                    <p>up to 30% off</p>
+                    <button id="click09" onclick="myFunction002()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction002() {
+                            document.getElementById("click09").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-3 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p3.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>flying machine</p>
+                    <p>up to 10% off</p>
+                    <button id="click001" onclick="myFunction003()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction003() {
+                            document.getElementById("click001").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-4 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p4.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>bare</p>
+                    <p>up to 20% off</p>
+                    <button id="click002" onclick="myFunction004()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction004() {
+                            document.getElementById("click002").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-5 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p5.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>flying machine</p>
+                    <p>up to 30% off</p>
+                    <button id="click003" onclick="myFunction005()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction005() {
+                            document.getElementById("click003").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-6 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p6.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>bare</p>
+                    <p>up to 10% off</p>
+                    <button id="click004" onclick="myFunction006()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction006() {
+                            document.getElementById("click004").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-7 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p7.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>bare</p>
+                    <p>up to 10% off</p>
+                    <button id="click005" onclick="myFunction007()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction007() {
+                            document.getElementById("click005").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-8 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p8.jpeg" alt="" width="150px">
+                <div class="lines">
+                    <p>flying machine</p>
+                    <p>up to 40% off</p>
+                    <button id="click006" onclick="myFunction008()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction008() {
+                            document.getElementById("click006").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Row-3 Product-9 -->
+            <div class="card-item">
+                <img id="bulge" src="images/p9.jpeg" alt="" width="180px">
+                <div class="lines">
+                    <p>bare</p>
+                    <p>up to 50% off</p>
+                    <button id="click007" onclick="myFunction009()"style="cursor: pointer; padding: 10px; background-color: orange; border-radius: 20px;">Add to Cart</button>
+
+                    <script>
+                        function myFunction009() {
+                            document.getElementById("click007").innerHTML = "added to cart successfully ";
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Back to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        
+        <!-- Footer-1 -->
+        <div class="row">
+            <div class="column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li>
+                      <a href="#">About Us</a> 
+                    </li>
+                    <li>
+                      <a href="#">Careers</a> 
+                    </li>
+                    <li>
+                      <a href="#">Press Releases</a> 
+                    </li>
+                    <li>
+                      <a href="#">Amazon Cares</a> 
+                    </li>
+                    <li>
+                      <a href="#">Gift a Smile</a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Connect with Us</h4>
+                <ul>
+                     <li>
+                      <a href="#">Facebook</a> 
+                    </li>
+                    <li>
+                      <a href="#">Twitter</a> 
+                    </li>
+                    <li>
+                      <a href="#">Instagram</a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li>
+                      <a href="#">Sell on Amazon</a> 
+                    </li>
+                    <li>
+                      <a href="#">Sell under Amazon Accelerator</a> 
+                    </li>
+                    <li>
+                      <a href="#">Amazon Global Selling</a> 
+                    </li>
+                    <li>
+                      <a href="#">Become an Affiliate</a> 
+                    </li>
+                    <li>
+                      <a href="#">Fulfilment by Amazon</a> 
+                    </li>
+                    <li>
+                      <a href="#">Advertise Your Products</a> 
+                    </li>
+                    <li>
+                      <a href="#">Amazon PAy on MeMerchants</a> 
+                    </li>
+                </ul>
+            </div>
+             <div class="column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li>
+                      <a href="#">COVID-19 and Amazon</a> 
+                    </li>
+                    <li>
+                      <a href="#">Your Account</a> 
+                    </li>
+                    <li>
+                      <a href="#">Returns Centre</a> 
+                    </li>
+                    <li>
+                      <a href="#">100% Purchase Protection</a> 
+                    </li>
+                    <li>
+                      <a href="#">Amazon App Download</a> 
+                    </li>
+                    <li>
+                      <a href="#">Amazon Assistant Download</a> 
+                    </li>
+                    <li>
+                      <a href="#">Help</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+                
+    </div>
+    
+  </main>
+
+
+    <!-- Footer-2 -->
+    <footer class="flex-all-center">
+        <p>
+            <a href="#">Conditions of Use & Sale</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Interest-Based Ads</a> 
+            <a href="#">&copy 1996-2021 Amazon, Inc.</a>
+        </p>
+    </footer>
+    
+</body>
+
+</html>
